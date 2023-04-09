@@ -23,6 +23,14 @@
     width: 100%;
 }
 
+#socialMedia img {
+
+    max-width: 70px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
+}
+
 #Centrao {
     align-items: center;
 }
