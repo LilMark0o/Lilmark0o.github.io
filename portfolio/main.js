@@ -1,5 +1,5 @@
 let textLength = 0;
-let text = "Python and Web Developer - Systems Engineering Student";
+let text = "Data Analyst and Web Developer";
 
 function type() {
     let textChar = text.charAt(textLength++);
@@ -9,7 +9,7 @@ function type() {
     if (textLength < text.length + 1) {
         setTimeout('type()', 50);
     } else {
-        text = 'Python and Web Developer - Systems Engineering Student';
+        text = 'Data Analyst and Web Developer';
     }
 }
 document.addEventListener("DOMContentLoaded", function () {

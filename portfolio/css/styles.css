@@ -74,21 +74,55 @@
 }
 
 #skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.skills__skill {
     display: flex;
-    flex-wrap: wrap
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: normal;
+    /* Allows text to wrap */
 }
 
-#skills__skill {
-    padding: 0.7rem 0.7rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    font-size: 1rem;
-    background: rgba(153, 153, 153, .2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #666
+.skills__skill.web {
+    background-color: #cee5ff;
+    /* Light blue for Web Development */
 }
 
+.skills__skill.programming {
+    background-color: #fbb0b0;
+    /* Light red for Python/Programming */
+}
+
+.skills__skill.database {
+    background-color: #fbf0b0;
+    /* Light orange for Database */
+}
+
+.skills__skill.other {
+    background-color: rgb(205, 255, 225);
+    /* Light purple for Other Skills */
+}
+
+.skills__skill:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.skills__icon {
+    margin-right: 5px;
+    color: #007bff;
+}
 a {
     color: black;
     text-decoration: none
